@@ -1,0 +1,97 @@
+p{
+    margin: 0;
+    font-family: Anton;
+}
+.turn{
+    margin-top: 75px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-family: Anton;
+}
+.sign-span{
+    color: red;
+}
+.start-button:hover{
+    opacity: 0.75;
+}
+.button-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.column-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.row-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.slot{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slot:hover{
+    background-color: rgba(255, 0, 0, 0.219);
+}
+.X_element{
+    font-family: Anton;
+    color: red;
+    font-size: 100px;
+}
+.O_element{
+    color: blue;
+    font-family: Anton;
+    font-size: 100px;
+}
+
+.X_element.appear{
+    animation: appear_animation 0.3s;
+}
+.O_element.appear{
+    animation: appear_animation 0.3s;
+}
+.win-div.appear{
+    animation: appear_animation 0.75s;
+}
+@keyframes appear_animation{
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.win-sign{
+    color: red;
+}
+.winner-title{
+    font-size: 50px;
+}
+.restart{
+    font-size: 50px;
+}
+.win-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.outer-win{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

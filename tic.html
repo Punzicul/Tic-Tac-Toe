@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" href="tic.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <p class="turn" id="turn">Current Sign: <span class="sign-span" id="sign-span">X</span></p>
+        <div class="column-flex">
+            <div class="row-flex">
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+            </div>
+            <div class="row-flex">
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+            </div>
+            <div class="row-flex">
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+            </div>
+            <div class="outer-win">
+                <div class="win-div" id="title-win">
+                    <p class="winner-title" id="win-title"><span class="win-sign" id="win-sign">X</span> WON!</p>
+                    <p class="restart"> PRESS <span style="color: goldenrod">G</span> TO RESTART</p>
+                </div>
+            </div>
+        </div>
+        <script src="tic.js"></script>
+    </body>
+</html>
